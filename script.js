@@ -71,7 +71,10 @@ function operate(){
             break;
         
         case '/':
-            if(current === 0) answer = null;
+            if(current === 0){
+                answer = 0
+                alert('Cannot divide by zero');
+            } 
             else answer = previous / current;
             break;
 
